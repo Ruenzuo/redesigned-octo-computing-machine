@@ -15,13 +15,20 @@ platform :ios do
   desc "Build"
   lane :build do
     cocoapods(repo_update: true)
-    build_ios_app(scheme: "ROCM",
-      destination: 'platform=iOS Simulator,name=iPhone 5s',
-      skip_archive: true,
-      skip_package_ipa: true)
+    simctl(block: lambda { |other_action, device|
+      other_action.build_ios_app(workspace: "#{Dir.pwd}/ROCM.xcworkspace",
+        scheme: "ROCM",
+        destination: "platform=iOS Simulator,name=#{device.name}",
+        skip_archive: true,
+        skip_package_ipa: true)
+    })
   end
 
   lane :test do
-    run_tests
+    simctl(block: lambda { |other_action, device|
+      other_action.run_tests(workspace: "#{Dir.pwd}/ROCM.xcworkspace",
+        scheme: 'ROCM',
+        device: device.name)
+    })
   end
 end
