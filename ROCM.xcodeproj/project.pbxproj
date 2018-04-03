@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F0C143AAF102B12FD777080 /* Pods_ROCM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C075CFBD40D00A6EE3D5D8AB /* Pods_ROCM.framework */; };
+		5676B45DABCF2C669876660B /* Pods_ROCMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5069A61DA40B39DEBE1F2D /* Pods_ROCMTests.framework */; };
 		799CC6212073A5F50052C114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799CC6202073A5F50052C114 /* AppDelegate.swift */; };
 		799CC6232073A5F50052C114 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799CC6222073A5F50052C114 /* ViewController.swift */; };
 		799CC6262073A5F50052C114 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799CC6242073A5F50052C114 /* Main.storyboard */; };
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043E01D9D7B23FE897E208D4 /* Pods-ROCMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROCMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ROCMTests/Pods-ROCMTests.release.xcconfig"; sourceTree = "<group>"; };
+		254CE7A828114AA283E8B6A0 /* Pods-ROCM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROCM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ROCM/Pods-ROCM.release.xcconfig"; sourceTree = "<group>"; };
+		5F96F9469349BED237F552B3 /* Pods-ROCMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROCMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ROCMTests/Pods-ROCMTests.debug.xcconfig"; sourceTree = "<group>"; };
 		799CC61D2073A5F50052C114 /* ROCM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROCM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799CC6202073A5F50052C114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		799CC6222073A5F50052C114 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		799CC6312073A5F50052C114 /* ROCMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ROCMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		799CC6352073A5F50052C114 /* ROCMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROCMTests.swift; sourceTree = "<group>"; };
 		799CC6372073A5F50052C114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA5069A61DA40B39DEBE1F2D /* Pods_ROCMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ROCMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C075CFBD40D00A6EE3D5D8AB /* Pods_ROCM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ROCM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57B30F4DB8D5673D2B81CFA /* Pods-ROCM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROCM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ROCM/Pods-ROCM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F0C143AAF102B12FD777080 /* Pods_ROCM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5676B45DABCF2C669876660B /* Pods_ROCMTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05A989BF76CC1B16E3C36B6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C075CFBD40D00A6EE3D5D8AB /* Pods_ROCM.framework */,
+				BA5069A61DA40B39DEBE1F2D /* Pods_ROCMTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		799CC6142073A5F50052C114 = {
 			isa = PBXGroup;
 			children = (
 				799CC61F2073A5F50052C114 /* ROCM */,
 				799CC6342073A5F50052C114 /* ROCMTests */,
 				799CC61E2073A5F50052C114 /* Products */,
+				FCFA4214B61B45CB4A43FFB4 /* Pods */,
+				05A989BF76CC1B16E3C36B6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +117,17 @@
 			path = ROCMTests;
 			sourceTree = "<group>";
 		};
+		FCFA4214B61B45CB4A43FFB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E57B30F4DB8D5673D2B81CFA /* Pods-ROCM.debug.xcconfig */,
+				254CE7A828114AA283E8B6A0 /* Pods-ROCM.release.xcconfig */,
+				5F96F9469349BED237F552B3 /* Pods-ROCMTests.debug.xcconfig */,
+				043E01D9D7B23FE897E208D4 /* Pods-ROCMTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 799CC63A2073A5F50052C114 /* Build configuration list for PBXNativeTarget "ROCM" */;
 			buildPhases = (
+				20A2FBD403962A5BA7066186 /* [CP] Check Pods Manifest.lock */,
 				799CC6192073A5F50052C114 /* Sources */,
 				799CC61A2073A5F50052C114 /* Frameworks */,
 				799CC61B2073A5F50052C114 /* Resources */,
+				B9B4699E7D234C6CB74B6647 /* [CP] Embed Pods Frameworks */,
+				EA843EF2ED1F8363A515807C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 799CC63D2073A5F50052C114 /* Build configuration list for PBXNativeTarget "ROCMTests" */;
 			buildPhases = (
+				76D2FD2ECED5C7FD4FD5B239 /* [CP] Check Pods Manifest.lock */,
 				799CC62D2073A5F50052C114 /* Sources */,
 				799CC62E2073A5F50052C114 /* Frameworks */,
 				799CC62F2073A5F50052C114 /* Resources */,
+				C2AEF69E5160A1735C5F7D26 /* [CP] Embed Pods Frameworks */,
+				9026C26AC07E04162BAC1556 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +231,108 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20A2FBD403962A5BA7066186 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ROCM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76D2FD2ECED5C7FD4FD5B239 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ROCMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9026C26AC07E04162BAC1556 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ROCMTests/Pods-ROCMTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9B4699E7D234C6CB74B6647 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ROCM/Pods-ROCM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ROCM/Pods-ROCM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2AEF69E5160A1735C5F7D26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ROCMTests/Pods-ROCMTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA843EF2ED1F8363A515807C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ROCM/Pods-ROCM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		799CC6192073A5F50052C114 /* Sources */ = {
@@ -351,6 +491,7 @@
 		};
 		799CC63B2073A5F50052C114 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E57B30F4DB8D5673D2B81CFA /* Pods-ROCM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +506,7 @@
 		};
 		799CC63C2073A5F50052C114 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254CE7A828114AA283E8B6A0 /* Pods-ROCM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,6 +521,7 @@
 		};
 		799CC63E2073A5F50052C114 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F96F9469349BED237F552B3 /* Pods-ROCMTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -395,6 +538,7 @@
 		};
 		799CC63F2073A5F50052C114 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 043E01D9D7B23FE897E208D4 /* Pods-ROCMTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
